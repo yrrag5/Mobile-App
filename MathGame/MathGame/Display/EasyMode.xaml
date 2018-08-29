@@ -16,8 +16,30 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            
-            <Grid Grid.Row="0" Margin=""
+
+            <Grid Grid.Row="0" Margin="8 4 8 4">
+                <TextBlock x:Name="Score" Text="Score:0" FontSize="27" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="HighScore" Text="Highest:0" FontSize="27" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Right"/>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="State" Text="1" FontSize="40" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ProgressBar x:Name="bar" IsIndeterminate="False" Maximum="999" Minimum="0" Height="10" Margin="8 0 8 0" Value="999" SmallChange="1"/>
+
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBlock x:Name="Ques" Text="2+7=9" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="3" VerticalAlignment="Top">
+                <Button x:Name="true" BorderBrush="GreenYellow" BorderThickness="4" Margin="5" Background="AliceBlue" Content="True" HorizontalAlignment="Left" VerticalAlignment="Center"
+                        Padding="20 5 20 5" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="true_Click"/>
+                <Button x:Name="false" BorderBrush="RosyBrown" BorderThickness="4" Margin="25 5 25 5" Background="AliceBlue" Content="False" HorizontalAlignment="Left" VerticalAlignment="Center"
+                        Padding="20 5 20 5" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="false_Click"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

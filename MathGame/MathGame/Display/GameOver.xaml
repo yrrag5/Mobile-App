@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="MathGame.Display.HardMode"
+    x:Class="MathGame.Display.GameOver"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MathGame.Display"
@@ -8,8 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid Background="BlanchedAlmond">
-            
-        </Grid>
+
     </Grid>
 </Page>
