@@ -8,6 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="YellowGreen">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <TextBlock x:Name="Title" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="Pink" FontWeight="ExtraBold"
+                               TextWrapping="Wrap" FontSize="27" TextAlignment="Center"/>
+                    <TextBlock x:Name="Score" Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Overall Score" Foreground="Pink" FontWeight="ExtraBold"
+                               TextWrapping="Wrap" FontSize="27" TextAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="S" Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="10" Foreground="Pink" FontWeight="ExtraBold"
+                               TextWrapping="Wrap" FontSize="80" TextAlignment="Center"/>
+ 
+            </Grid>
 
+            <Grid Grid.Row="2">
+                <StackPanel Orientation=""
+            </Grid>
+            
+        </Grid>
     </Grid>
 </Page>

@@ -8,8 +8,40 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid Background="BlanchedAlmond">
-            
+        <Grid Background="BlueViolet">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="8 4">
+                <TextBlock x:Name="score" Text="Score : 0" FontSize="27" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock x:Name="HighScore" Text="High Score: 0" FontSize="27" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="State" Text="1" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ProgressBar x:Name="bar" IsIndeterminate="False" Maximum="999" Minimum="0" Height="10" Grid.Row="1" Margin="8 0" Value="999" SmallChange="1"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBlock x:Name="question" Text="8 ... 3 = 24" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="Plus" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="Plus_Click"/>
+                    <Button x:Name="minus" Margin=" 0 20 0 0" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="-" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="minus_Click"/>
+                    <Button x:Name="muiltiply" Margin="0 20 0 0" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="*" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="muiltiply_Click"/>
+                    <Button x:Name="Divide" Margin="0 20 0 0" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="/" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="Divide_Click"/>        
+                </StackPanel>
+            </Grid>
         </Grid>
     </Grid>
 </Page>
