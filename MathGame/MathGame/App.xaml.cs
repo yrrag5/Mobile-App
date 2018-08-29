@@ -69,11 +69,52 @@ namespace MathGame
             {
                 if (rootFrame.Content == null)
                 {
+                    // Load settings
+                    string highScore = Conditions.Score.LoadSett("High Score");
+                    string mode = Conditions.Score.LoadSett("Mode");
+                    string speed = Conditions.Score.LoadSett("Speed");
+
+                    // Set default speed of game
+                    if (String.IsNullOrEmpty(speed))
+                    {
+                        Conditions.Score.SaveSett("Speed", "50");
+                        Conditions.Score.Speed = 50;
+                    }//Inner if
+
+                    else
+                    {
+                        Conditions.Score.Speed = int.Parse(Conditions.Score.LoadSett("Speed"));
+                    }// else
+
+                    // Mode
+                    if (String.IsNullOrEmpty(mode))
+                    {
+                        Conditions.Score.SaveSett("Mode", "0");
+                        Conditions.Score.Mode = 0;
+                    }//Inner if
+
+                    else
+                    {
+                        Conditions.Score.Mode = int.Parse(Conditions.Score.LoadSett("Mode"));
+                    }
+
+                    // Score
+                    if (String.IsNullOrEmpty(highScore))
+                    {
+                        Conditions.Score.SaveSett("HighScore", "0");
+                        Conditions.Score.HighScore = 0;
+                    }//Inner if
+
+                    else
+                    {
+                        Conditions.Score.HighScore = int.Parse(Conditions.Score.LoadSett("HighScore"));
+                    }
+
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
-                }
+                }//IF
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
