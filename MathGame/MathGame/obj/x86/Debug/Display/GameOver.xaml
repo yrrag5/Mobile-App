@@ -16,27 +16,28 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <TextBlock x:Name="Title" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="Pink" FontWeight="ExtraBold"
+                    <TextBlock x:ConnectionId='4' x:Name="Title" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over" Foreground="Pink" FontWeight="ExtraBold"
                                TextWrapping="Wrap" FontSize="27" TextAlignment="Center"/>
-                    <TextBlock x:Name="Score" Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Overall Score" Foreground="Pink" FontWeight="ExtraBold"
+                    <TextBlock x:ConnectionId='5' x:Name="Score" Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Overall Score" Foreground="Pink" FontWeight="ExtraBold"
                                TextWrapping="Wrap" FontSize="27" TextAlignment="Center"/>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1">
-                <TextBlock x:Name="S" Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="10" Foreground="Pink" FontWeight="ExtraBold"
+                <TextBlock x:ConnectionId='3' x:Name="S" Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="10" Foreground="Pink" FontWeight="ExtraBold"
                                TextWrapping="Wrap" FontSize="80" TextAlignment="Center"/>
  
             </Grid>
 
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <Button x:Name="restart" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Restart"
-                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="restart_Click"/>
-                    <Button x:Name="home" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Home"
-                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="home_Click"/>
+                    <Button x:ConnectionId='1' x:Name="restart" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Restart"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27"                      />
+                    <Button x:ConnectionId='2' x:Name="home" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Home"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27"                   />
                 </StackPanel>
             </Grid>
             
         </Grid>
     </Grid>
 </Page>
+

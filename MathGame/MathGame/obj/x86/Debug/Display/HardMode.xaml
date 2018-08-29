@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="MathGame.Display.HardMode"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MathGame.Display"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="BlueViolet">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="8 4">
+                <TextBlock x:ConnectionId='8' x:Name="score" Text="Score : 0" FontSize="27" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock x:ConnectionId='9' x:Name="HighScore" Text="High Score: 0" FontSize="27" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:ConnectionId='6' x:Name="State" Text="1" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ProgressBar x:ConnectionId='7' x:Name="bar" IsIndeterminate="False" Maximum="999" Minimum="0" Height="10" Grid.Row="1" Margin="8 0" Value="999" SmallChange="1"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBlock x:ConnectionId='5' x:Name="question" Text="8 ... 3 = 24" FontSize="30" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <StackPanel Orientation="Vertical">
+                    <Button x:ConnectionId='1' x:Name="Plus" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27"                   />
+                    <Button x:ConnectionId='2' x:Name="minus" Margin=" 0 20 0 0" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="-" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27"                    />
+                    <Button x:ConnectionId='3' x:Name="muiltiply" Margin="0 20 0 0" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="*" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27"                        />
+                    <Button x:ConnectionId='4' x:Name="Divide" Margin="0 20 0 0" BorderBrush="Yellow" BorderThickness="4" Background="Violet" Content="/" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Padding="80 5" Foreground="White" FontWeight="ExtraBold" FontSize="27"                     />        
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+

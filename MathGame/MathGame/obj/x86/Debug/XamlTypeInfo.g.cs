@@ -132,19 +132,21 @@ namespace MathGame.MathGame_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "MathGame.Display.EasyMode";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "MathGame.Display.GameOver";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "MathGame.Display.HardMode";
             _typeNameTable[4] = "MathGame.MainPage";
+            _typeNameTable[5] = "MathGame.Display.Options";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::MathGame.Display.EasyMode);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::MathGame.Display.GameOver);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::MathGame.Display.HardMode);
             _typeTable[4] = typeof(global::MathGame.MainPage);
+            _typeTable[5] = typeof(global::MathGame.Display.Options);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +181,10 @@ namespace MathGame.MathGame_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_EasyMode() { return new global::MathGame.Display.EasyMode(); }
+        private object Activate_0_GameOver() { return new global::MathGame.Display.GameOver(); }
         private object Activate_3_HardMode() { return new global::MathGame.Display.HardMode(); }
         private object Activate_4_MainPage() { return new global::MathGame.MainPage(); }
+        private object Activate_5_Options() { return new global::MathGame.Display.Options(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,9 +196,9 @@ namespace MathGame.MathGame_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MathGame.Display.EasyMode
+            case 0:   //  MathGame.Display.GameOver
                 userType = new global::MathGame.MathGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_EasyMode;
+                userType.Activator = Activate_0_GameOver;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -218,6 +221,13 @@ namespace MathGame.MathGame_XamlTypeInfo
             case 4:   //  MathGame.MainPage
                 userType = new global::MathGame.MathGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  MathGame.Display.Options
+                userType = new global::MathGame.MathGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_Options;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

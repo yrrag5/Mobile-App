@@ -342,24 +342,25 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Margin="5">
-                <TextBlock x:Name="Title" Text="Difficulty" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='5' x:Name="Title" Text="Difficulty" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="1" Margin="5">
-                <CheckBox x:Name="DiffSelectE" Foreground="White" FontSize="15" FontWeight="ExtraBold" Content="Easy" HorizontalAlignment="Left" Margin="10, 10, 0, 0" VerticalAlignment="Top" Style="{StaticResource MyStyleCheckBox}"/>
-                <CheckBox x:Name="DiffSelectH" Foreground="White" FontSize="15" FontWeight="ExtraBold" Content="Hard" HorizontalAlignment="Right" Margin="10, 10, 0, 0" VerticalAlignment="Top" Style="{StaticResource MyStyleCheckBox}" IsChecked="True"/>
+                <CheckBox x:ConnectionId='3' x:Name="DiffSelectE" Foreground="White" FontSize="15" FontWeight="ExtraBold" Content="Easy" HorizontalAlignment="Left" Margin="10, 10, 0, 0" VerticalAlignment="Top" Style="{StaticResource MyStyleCheckBox}"/>
+                <CheckBox x:ConnectionId='4' x:Name="DiffSelectH" Foreground="White" FontSize="15" FontWeight="ExtraBold" Content="Hard" HorizontalAlignment="Right" Margin="10, 10, 0, 0" VerticalAlignment="Top" Style="{StaticResource MyStyleCheckBox}" IsChecked="True"/>
             </Grid>
 
             <Grid Grid.Row="2" Margin="5">
                 <TextBlock Text="Speed" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="3" Margin="5">
-                <Slider x:Name="slider" Minimum="0" Maximum="10" Value="5" ValueChanged="slider_ValueChanged"/>
+                <Slider x:ConnectionId='2' x:Name="slider" Minimum="0" Maximum="10" Value="5"                                   />
             </Grid>
             <Grid Grid.Row="5">
-                <Button x:Name="home" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Home"
-                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="home_Click"/>
+                <Button x:ConnectionId='1' x:Name="home" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Home"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27"                   />
             </Grid>
             
         </Grid>
     </Grid>
 </Page>
+

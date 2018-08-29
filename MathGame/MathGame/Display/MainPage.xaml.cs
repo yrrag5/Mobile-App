@@ -34,7 +34,7 @@ namespace MathGame
             // Easy mode
             if(Conditions.Score.Mode == 0)
             {
-                Frame.Navigate(typeof(Display.EasyMode));
+               // Frame.Navigate(typeof(Display.EasyMode));
             }
 
             // Hard Mode

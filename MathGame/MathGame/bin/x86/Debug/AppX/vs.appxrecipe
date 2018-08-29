@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b95ae257-9e29-4dae-b4fe-6edbca863e8d</PackageIdentityName>
     <PackageIdentityPublisher>CN=College</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-29T16:21:38.281</Modified>
+      <Modified>2018-08-29T23:46:27.237</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\bin\x86\Debug\MathGame.exe">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\bin\x86\Debug\MathGame.exe">
       <PackagePath>entrypoint\MathGame.exe</PackagePath>
-      <Modified>2018-08-29T16:21:29.207</Modified>
+      <Modified>2018-08-29T23:46:25.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\College\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,60 +448,60 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-08-20T17:52:13.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\bin\x86\Debug\MathGame.xr.xml">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\bin\x86\Debug\MathGame.xr.xml">
       <PackagePath>MathGame.xr.xml</PackagePath>
-      <Modified>2018-08-29T16:21:28.274</Modified>
+      <Modified>2018-08-29T23:39:34.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-01-16T11:49:55.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-29T16:21:35.887</Modified>
+      <Modified>2018-08-29T23:46:26.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\College\Desktop\MA\Mobile-App\MathGame\MathGame\bin\x86\Debug\Core\MathGame.exe">
+    <AppxPackagedFile Include="C:\Users\College\Desktop\Repeat\Mobile-App\MathGame\MathGame\bin\x86\Debug\Core\MathGame.exe">
       <PackagePath>MathGame.exe</PackagePath>
-      <Modified>2018-08-29T16:21:38.272</Modified>
+      <Modified>2018-08-29T23:46:27.231</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
