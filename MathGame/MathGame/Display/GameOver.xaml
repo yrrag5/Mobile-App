@@ -29,7 +29,12 @@
             </Grid>
 
             <Grid Grid.Row="2">
-                <StackPanel Orientation=""
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <Button x:Name="restart" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Restart"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="restart_Click"/>
+                    <Button x:Name="home" BorderBrush="Aqua" BorderThickness="4" Margin="0 20 0 0" Background="Red" Content="Home"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="27" Click="restart_Click"/>
+                </StackPanel>
             </Grid>
             
         </Grid>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathGame.Display;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -76,7 +77,7 @@ namespace MathGame
 
         private void option_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(Options));
         }
     }
 }
